@@ -71,7 +71,6 @@ export default function WeeklyChecklist({
                 </div>
                 
                 <div className="space-y-3 flex-1 flex flex-col text-left">
-// ... existing code ...
                   {/* GTME Section */}
                   <div>
                     <h5 className="text-[10px] uppercase font-bold text-slate-400 mb-1">GTME Track</h5>
