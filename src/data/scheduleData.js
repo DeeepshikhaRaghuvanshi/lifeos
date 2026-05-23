@@ -69,7 +69,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Study foundation models",
             "description": "Focus on IITJ classes and Databricks Gen AI course.",
@@ -142,7 +142,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Advanced prompt design",
             "description": "Databricks Gen AI course.",
@@ -205,7 +205,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "RAG Concepts",
             "description": "Databricks Gen AI course.",
@@ -267,7 +267,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Vector databases and embeddings",
             "description": "Databricks Gen AI course.",
@@ -338,7 +338,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Agentic AI",
             "description": "Databricks Gen AI course.",
@@ -406,7 +406,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Enterprise LLMs",
             "description": "Databricks Gen AI course.",
@@ -471,7 +471,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Model Serving",
             "description": "Databricks course.",
@@ -535,7 +535,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Real-time streaming data",
             "description": "Databricks course.",
@@ -606,7 +606,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Databricks AI/BI Genie",
             "description": "Databricks course.",
@@ -671,7 +671,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Predictive model",
             "description": "Databricks course.",
@@ -736,7 +736,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Finalize DB coursework",
             "description": "Databricks course.",
@@ -801,7 +801,7 @@ export const scheduleData = [
             ]
           },
           {
-            "day": "Sat/Sun",
+            "day": "Saturday",
             "type": "Databricks Integration",
             "task": "Complete DB course",
             "description": "Databricks course final.",
