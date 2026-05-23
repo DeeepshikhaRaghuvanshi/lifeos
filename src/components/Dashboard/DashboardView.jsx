@@ -1,11 +1,13 @@
 import React from 'react';
+import ProgressOverview from './ProgressOverview';
 import MonthHeatmap from './MonthHeatmap';
 import WeeklyChecklist from './WeeklyChecklist';
 import { scheduleData } from '../../data/scheduleData';
 
 export default function DashboardView({ 
   activePhase, 
-  completedItems, 
+  completedItems,
+  streak,
   toggleHabit, 
   getDayProgress,
   setSelectedDay 
@@ -14,6 +16,12 @@ export default function DashboardView({
 
   return (
     <div className="space-y-6">
+      <ProgressOverview 
+        weeks={currentPhaseData.weeks} 
+        completedItems={completedItems} 
+        streak={streak} 
+      />
+
       <MonthHeatmap 
         weeks={currentPhaseData.weeks} 
         completedItems={completedItems} 

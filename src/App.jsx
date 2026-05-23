@@ -59,6 +59,7 @@ export default function App() {
         <DashboardView 
           activePhase={activePhase}
           completedItems={tracker.completedItems}
+          streak={tracker.streak}
           toggleHabit={tracker.toggleHabit}
           getDayProgress={tracker.getDayProgress}
           setSelectedDay={setSelectedDay}
