@@ -7,7 +7,7 @@ import Header from './components/Layout/Header';
 import LoginScreen from './components/Auth/LoginScreen';
 import SetupScreen from './components/Auth/SetupScreen';
 import PhaseNavigation from './components/Dashboard/PhaseNavigation';
-import WeeklyGrid from './components/Dashboard/WeeklyGrid';
+import DashboardView from './components/Dashboard/DashboardView';
 import DayDetailsModal from './components/Modals/DayDetailsModal';
 import ResourcesModal from './components/Modals/ResourcesModal';
 
@@ -55,10 +55,12 @@ export default function App() {
           setActivePhase={setActivePhase} 
         />
         
-        <WeeklyGrid 
-          activePhase={activePhase} 
-          getDayProgress={tracker.getDayProgress} 
-          setSelectedDay={setSelectedDay} 
+        <DashboardView 
+          activePhase={activePhase}
+          completedItems={tracker.completedItems}
+          toggleHabit={tracker.toggleHabit}
+          getDayProgress={tracker.getDayProgress}
+          setSelectedDay={setSelectedDay}
         />
       </main>
 

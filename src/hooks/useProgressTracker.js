@@ -40,6 +40,22 @@ export const useProgressTracker = (user, isLocalMode) => {
     setProgress(Math.round((done / total) * 100) || 0);
   }, [completedItems]);
 
+  const toggleHabit = async (weekNumber, dayName, habitName) => {
+    const id = `habit-w${weekNumber}-${dayName}-${habitName}`;
+    const newCompleted = { ...completedItems, [id]: !completedItems[id] };
+    
+    setCompletedItems(newCompleted);
+
+    if (isLocalMode) {
+      localStorage.setItem('gtm-tracker-progress-v2', JSON.stringify(newCompleted));
+    } else if (user) {
+      try {
+        const docRef = doc(db, 'users', user.uid, 'tracker_data', 'progress_v2');
+        await setDoc(docRef, { completedItems: newCompleted }, { merge: true });
+      } catch (error) { console.error("Cloud save error:", error); }
+    }
+  };
+
   const toggleInstruction = async (weekNumber, dayName, instructionIdx) => {
     const id = `w${weekNumber}-${dayName}-i${instructionIdx}`;
     const newCompleted = { ...completedItems, [id]: !completedItems[id] };
@@ -64,5 +80,5 @@ export const useProgressTracker = (user, isLocalMode) => {
     return { done, total: instructions.length, isAllDone: done === instructions.length && instructions.length > 0 };
   };
 
-  return { completedItems, setCompletedItems, progress, toggleInstruction, getDayProgress };
+  return { completedItems, setCompletedItems, progress, toggleInstruction, toggleHabit, getDayProgress };
 };
