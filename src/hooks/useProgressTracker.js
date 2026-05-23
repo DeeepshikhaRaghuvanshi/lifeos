@@ -109,8 +109,9 @@ export const useProgressTracker = (user, isLocalMode) => {
     }
   };
 
-  const toggleInstruction = async (weekNumber, dayName, instructionIdx) => {
-    const id = `w${weekNumber}-${dayName}-i${instructionIdx}`;
+  const toggleInstruction = async (trackPrefix, weekNumber, dayName, instructionIdx) => {
+    const prefix = trackPrefix || 'w';
+    const id = `${prefix}${weekNumber}-${dayName}-i${instructionIdx}`;
     const newCompleted = { ...completedItems, [id]: !completedItems[id] };
     
     setCompletedItems(newCompleted);
@@ -125,10 +126,11 @@ export const useProgressTracker = (user, isLocalMode) => {
     }
   };
 
-  const getDayProgress = (weekNum, dayName, instructions) => {
+  const getDayProgress = (trackPrefix, weekNum, dayName, instructions) => {
+    const prefix = trackPrefix || 'w';
     let done = 0;
     instructions.forEach((_, idx) => {
-      if (completedItems[`w${weekNum}-${dayName}-i${idx}`]) done++;
+      if (completedItems[`${prefix}${weekNum}-${dayName}-i${idx}`]) done++;
     });
     return { done, total: instructions.length, isAllDone: done === instructions.length && instructions.length > 0 };
   };

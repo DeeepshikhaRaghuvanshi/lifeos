@@ -2,7 +2,6 @@ import React from 'react';
 import { ChevronRight, Calendar } from 'lucide-react';
 
 const EXTRA_HABITS = [
-  { id: 'dsa', label: 'DSA' },
   { id: 'meditation', label: 'Meditation' },
   { id: 'affirmation', label: 'Affirmation' },
   { id: 'exercise', label: 'Physical Exercise' }
@@ -12,6 +11,7 @@ const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
 export default function WeeklyChecklist({ 
   week, 
+  sweWeek,
   completedItems, 
   toggleHabit, 
   getDayProgress,
@@ -30,17 +30,21 @@ export default function WeeklyChecklist({
           {DAYS_OF_WEEK.map((dayName, idx) => {
             const gtmeDay = week.days.find(d => d.day === dayName);
             let gtmeProgress = null;
-            if (gtmeDay) {
-              gtmeProgress = getDayProgress(week.weekNumber, dayName, gtmeDay.instructions);
-            }
-
             let dayTotal = EXTRA_HABITS.length;
             let dayDone = 0;
 
             if (gtmeDay) {
-              gtmeProgress = getDayProgress(week.weekNumber, dayName, gtmeDay.instructions);
+              gtmeProgress = getDayProgress('w', week.weekNumber, dayName, gtmeDay.instructions);
               dayTotal += gtmeProgress.total;
               dayDone += gtmeProgress.done;
+            }
+            
+            const sweDay = sweWeek?.days.find(d => d.day === dayName);
+            let sweProgress = null;
+            if (sweDay) {
+              sweProgress = getDayProgress('swe-w', week.weekNumber, dayName, sweDay.instructions);
+              dayTotal += sweProgress.total;
+              dayDone += sweProgress.done;
             }
 
             EXTRA_HABITS.forEach(habit => {

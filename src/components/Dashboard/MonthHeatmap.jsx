@@ -2,7 +2,7 @@ import React from 'react';
 
 const HABITS = [
   { id: 'gtme', label: 'GTME' },
-  { id: 'dsa', label: 'DSA' },
+  { id: 'swe', label: 'SWE Upskilling' },
   { id: 'meditation', label: 'Meditation' },
   { id: 'affirmation', label: 'Affirmation' },
   { id: 'exercise', label: 'Exercise' }
@@ -10,6 +10,7 @@ const HABITS = [
 
 export default function MonthHeatmap({ 
   weeks, 
+  sweWeeks,
   completedItems, 
   getDayProgress 
 }) {
@@ -17,21 +18,32 @@ export default function MonthHeatmap({
   const days = [];
   const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  weeks.forEach(week => {
+  weeks.forEach((week, weekIdx) => {
     DAYS_OF_WEEK.forEach(dayName => {
+      let sweDay = null;
+      if (sweWeeks && sweWeeks[weekIdx]) {
+        sweDay = sweWeeks[weekIdx].days.find(d => d.day === dayName);
+      }
+      
       days.push({
         weekNumber: week.weekNumber,
         dayName: dayName,
         // Find the GTME day data if it exists
-        gtmeDay: week.days.find(d => d.day === dayName)
+        gtmeDay: week.days.find(d => d.day === dayName),
+        sweDay: sweDay
       });
     });
   });
 
-  const isHabitCompleted = (weekNum, dayName, habitId, gtmeDay) => {
+  const isHabitCompleted = (weekNum, dayName, habitId, dayData) => {
     if (habitId === 'gtme') {
-      if (!gtmeDay) return false;
-      const progress = getDayProgress(weekNum, dayName, gtmeDay.instructions);
+      if (!dayData.gtmeDay) return false;
+      const progress = getDayProgress('w', weekNum, dayName, dayData.gtmeDay.instructions);
+      return progress.isAllDone;
+    }
+    if (habitId === 'swe') {
+      if (!dayData.sweDay) return false;
+      const progress = getDayProgress('swe-w', weekNum, dayName, dayData.sweDay.instructions);
       return progress.isAllDone;
     }
     const key = `habit-w${weekNum}-${dayName}-${habitId}`;
@@ -66,15 +78,21 @@ export default function MonthHeatmap({
             {HABITS.map(habit => (
               <div key={habit.id} className="grid grid-cols-[repeat(28,minmax(0,1fr))] gap-1 h-5 md:h-6">
                 {days.map((day, idx) => {
-                  const completed = isHabitCompleted(day.weekNumber, day.dayName, habit.id, day.gtmeDay);
-                  const isWeekendAndGtme = habit.id === 'gtme' && (!day.gtmeDay || day.gtmeDay.instructions.length === 0);
+                  const completed = isHabitCompleted(day.weekNumber, day.dayName, habit.id, day);
+                  
+                  let isWeekendAndRest = false;
+                  if (habit.id === 'gtme') {
+                      isWeekendAndRest = (!day.gtmeDay || day.gtmeDay.instructions.length === 0);
+                  } else if (habit.id === 'swe') {
+                      isWeekendAndRest = (!day.sweDay || day.sweDay.instructions.length === 0);
+                  }
                   
                   return (
                     <div 
                       key={idx}
                       title={`${habit.label} - Week ${day.weekNumber} ${day.dayName}`}
                       className={`w-full h-full rounded-sm transition-all duration-200 ${
-                        isWeekendAndGtme ? 'bg-slate-100' :
+                        isWeekendAndRest ? 'bg-slate-100' :
                         completed ? 'bg-emerald-500' : 'bg-slate-200'
                       }`}
                     />

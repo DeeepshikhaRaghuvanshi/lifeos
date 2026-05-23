@@ -39,7 +39,7 @@ const CircularProgress = ({ value, label, sublabel, colorClass, strokeClass }) =
   );
 };
 
-export default function ProgressOverview({ weeks, completedItems, streak }) {
+export default function ProgressOverview({ weeks, sweWeeks, completedItems, streak }) {
   let gtmeTotal = 0;
   let gtmeDone = 0;
   let habitsTotal = 0;
@@ -47,7 +47,7 @@ export default function ProgressOverview({ weeks, completedItems, streak }) {
 
   const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  weeks.forEach(week => {
+  weeks.forEach((week, weekIdx) => {
     DAYS_OF_WEEK.forEach(dayName => {
       // GTME
       const gtmeDay = week.days.find(d => d.day === dayName);
@@ -59,9 +59,22 @@ export default function ProgressOverview({ weeks, completedItems, streak }) {
           }
         });
       }
+      
+      // SWE
+      if (sweWeeks && sweWeeks[weekIdx]) {
+        const sweDay = sweWeeks[weekIdx].days.find(d => d.day === dayName);
+        if (sweDay) {
+          sweDay.instructions.forEach((_, idx) => {
+            habitsTotal++; // Treat SWE tasks as part of the habits/upskilling progress logic, or new
+            if (completedItems[`swe-w${week.weekNumber}-${dayName}-i${idx}`]) {
+              habitsDone++;
+            }
+          });
+        }
+      }
 
       // Habits
-      ['dsa', 'meditation', 'affirmation', 'exercise'].forEach(habit => {
+      ['meditation', 'affirmation', 'exercise'].forEach(habit => {
         habitsTotal++;
         if (completedItems[`habit-w${week.weekNumber}-${dayName}-${habit}`]) {
           habitsDone++;
