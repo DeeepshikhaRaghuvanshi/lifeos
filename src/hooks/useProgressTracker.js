@@ -6,6 +6,7 @@ import { scheduleData } from '../data/scheduleData';
 export const useProgressTracker = (user, isLocalMode) => {
   const [completedItems, setCompletedItems] = useState({});
   const [progress, setProgress] = useState(0);
+  const [streak, setStreak] = useState({ current: 0, max: 0 });
 
   useEffect(() => {
     if (isLocalMode) {
@@ -27,17 +28,65 @@ export const useProgressTracker = (user, isLocalMode) => {
   useEffect(() => {
     let total = 0;
     let done = 0;
+    const allDays = [];
+    const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
     scheduleData.forEach(phase => {
       phase.weeks.forEach(week => {
-        week.days.forEach(day => {
-          day.instructions.forEach((_, idx) => {
-            total++;
-            if (completedItems[`w${week.weekNumber}-${day.day}-i${idx}`]) done++;
+        DAYS_OF_WEEK.forEach(dayName => {
+          let isCompleted = false;
+
+          const gtmeDay = week.days.find(d => d.day === dayName);
+          if (gtmeDay) {
+            gtmeDay.instructions.forEach((_, idx) => {
+              total++;
+              if (completedItems[`w${week.weekNumber}-${dayName}-i${idx}`]) {
+                done++;
+                isCompleted = true;
+              }
+            });
+          }
+          
+          ['gtme', 'dsa', 'meditation', 'affirmation', 'exercise'].forEach(habit => {
+              if (completedItems[`habit-w${week.weekNumber}-${dayName}-${habit}`]) {
+                 isCompleted = true;
+              }
           });
+
+          allDays.push({ isCompleted });
         });
       });
     });
+
+    let maxStreak = 0;
+    let lastActiveIdx = -1;
+    for (let i = allDays.length - 1; i >= 0; i--) {
+      if (allDays[i].isCompleted) {
+        lastActiveIdx = i;
+        break;
+      }
+    }
+
+    let tempStreak = 0;
+    if (lastActiveIdx !== -1) {
+      let tempFreeze = false;
+      for (let i = 0; i <= lastActiveIdx; i++) {
+        if (allDays[i].isCompleted) {
+          tempStreak++;
+          if (tempStreak > maxStreak) maxStreak = tempStreak;
+        } else {
+          if (!tempFreeze && tempStreak > 0) {
+            tempFreeze = true; // Use buffer
+          } else {
+            tempStreak = 0; // Break streak
+            tempFreeze = false;
+          }
+        }
+      }
+    }
+
     setProgress(Math.round((done / total) * 100) || 0);
+    setStreak({ current: tempStreak, max: maxStreak });
   }, [completedItems]);
 
   const toggleHabit = async (weekNumber, dayName, habitName) => {
@@ -80,5 +129,5 @@ export const useProgressTracker = (user, isLocalMode) => {
     return { done, total: instructions.length, isAllDone: done === instructions.length && instructions.length > 0 };
   };
 
-  return { completedItems, setCompletedItems, progress, toggleInstruction, toggleHabit, getDayProgress };
+  return { completedItems, setCompletedItems, progress, streak, toggleInstruction, toggleHabit, getDayProgress };
 };

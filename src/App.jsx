@@ -45,6 +45,7 @@ export default function App() {
         isLocalMode={isLocalMode} 
         user={auth.user} 
         progress={tracker.progress} 
+        streak={tracker.streak}
         setShowResources={setShowResources} 
         handleLogout={handleLogout} 
       />

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Trophy, Bookmark, Printer, LogOut, Code } from 'lucide-react';
+import { Trophy, Bookmark, Printer, LogOut, Code, Flame } from 'lucide-react';
 
-export default function Header({ isLocalMode, user, progress, setShowResources, handleLogout }) {
+export default function Header({ isLocalMode, user, progress, streak, setShowResources, handleLogout }) {
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-10 print:hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -34,12 +34,20 @@ export default function Header({ isLocalMode, user, progress, setShowResources, 
         </div>
         
         <div className="mt-6">
-          <div className="flex justify-between text-sm font-medium text-slate-600 mb-2">
-            <span>Overall Progress ({progress}%)</span>
-            <span className="text-indigo-600 font-bold">{progress === 100 ? 'Completed!' : ''}</span>
+          <div className="flex justify-between items-center text-sm font-medium text-slate-600 mb-2">
+            <div className="flex items-center gap-4">
+              <span>Overall Progress ({progress}%)</span>
+              {streak && streak.current > 0 && (
+                <div className="flex items-center gap-1.5 text-orange-500 bg-orange-50 px-2 py-0.5 rounded border border-orange-100 font-bold" title={`Max Streak: ${streak.max} Days`}>
+                  <Flame size={16} className={streak.current > 2 ? "animate-pulse" : ""} />
+                  {streak.current} Day Streak!
+                </div>
+              )}
+            </div>
+            <span className="text-emerald-500 font-bold">{progress === 100 ? 'Completed!' : ''}</span>
           </div>
           <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
-            <div className="bg-indigo-600 h-2.5 rounded-full transition-all duration-500 ease-out" style={{ width: `${progress}%` }}></div>
+            <div className="bg-emerald-500 h-2.5 rounded-full transition-all duration-500 ease-out" style={{ width: `${progress}%` }}></div>
           </div>
         </div>
       </div>
