@@ -19,25 +19,25 @@ export default function DashboardView({
   return (
     <div className="space-y-6">
       <ProgressOverview 
-        weeks={currentPhaseData.weeks} 
-        sweWeeks={swePhaseData.weeks}
+        weeks={currentPhaseData?.weeks || []} 
+        sweWeeks={swePhaseData?.weeks || []}
         completedItems={completedItems} 
         streak={streak} 
       />
 
       <MonthHeatmap 
-        weeks={currentPhaseData.weeks}
-        sweWeeks={swePhaseData.weeks}
+        weeks={currentPhaseData?.weeks || []}
+        sweWeeks={swePhaseData?.weeks || []}
         completedItems={completedItems} 
         getDayProgress={getDayProgress} 
       />
 
       <div className="space-y-6">
-        {currentPhaseData.weeks.map((week, idx) => (
+        {currentPhaseData?.weeks?.map((week) => (
           <WeeklyChecklist 
             key={week.weekNumber}
             week={week}
-            sweWeek={swePhaseData.weeks[idx]}
+            sweWeek={swePhaseData?.weeks?.find(w => w.weekNumber === week.weekNumber)}
             completedItems={completedItems}
             toggleHabit={toggleHabit}
             getDayProgress={getDayProgress}

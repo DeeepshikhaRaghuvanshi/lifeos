@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { doc, setDoc, onSnapshot } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import { scheduleData } from '../data/scheduleData';
+import { sweData } from '../data/sweData';
 
 export const useProgressTracker = (user, isLocalMode) => {
   const [completedItems, setCompletedItems] = useState({});
@@ -31,11 +32,17 @@ export const useProgressTracker = (user, isLocalMode) => {
     const allDays = [];
     const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-    scheduleData.forEach(phase => {
-      phase.weeks.forEach(week => {
+    scheduleData.forEach((phase, phaseIndex) => {
+      // Find matching SWE phase if available to check completion
+      const currentSwePhase = sweData[phaseIndex] || { weeks: [] };
+
+      phase.weeks.forEach((week, weekIndex) => {
+        const currentSweWeek = currentSwePhase.weeks.find(w => w.weekNumber === week.weekNumber) || { days: [] };
+
         DAYS_OF_WEEK.forEach(dayName => {
           let dayAllDone = true;
 
+          // Check GTME Checklists
           const gtmeDay = week.days.find(d => d.day === dayName);
           if (gtmeDay) {
             let gtmeTaskDone = 0;
@@ -50,9 +57,29 @@ export const useProgressTracker = (user, isLocalMode) => {
               dayAllDone = false;
             }
           }
+
+          // Check SWE Checklists
+          const sweDay = currentSweWeek.days.find(d => d.day === dayName);
+          if (sweDay) {
+            let sweTaskDone = 0;
+            sweDay.instructions.forEach((_, idx) => {
+              total++;
+              if (completedItems[`swe-w${week.weekNumber}-${dayName}-i${idx}`]) {
+                done++;
+                sweTaskDone++;
+              }
+            });
+            if (sweDay.instructions.length > 0 && sweTaskDone < sweDay.instructions.length) {
+              dayAllDone = false;
+            }
+          }
           
-          ['dsa', 'meditation', 'affirmation', 'exercise'].forEach(habit => {
-              if (!completedItems[`habit-w${week.weekNumber}-${dayName}-${habit}`]) {
+          // Check Extra Habits
+          ['meditation', 'affirmation', 'exercise'].forEach(habit => {
+              total++; // Add habit to total expected operations
+              if (completedItems[`habit-w${week.weekNumber}-${dayName}-${habit}`]) {
+                 done++;
+              } else {
                  dayAllDone = false;
               }
           });

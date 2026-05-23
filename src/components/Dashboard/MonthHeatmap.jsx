@@ -18,11 +18,12 @@ export default function MonthHeatmap({
   const days = [];
   const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  weeks.forEach((week, weekIdx) => {
+  weeks.forEach((week) => {
     DAYS_OF_WEEK.forEach(dayName => {
       let sweDay = null;
-      if (sweWeeks && sweWeeks[weekIdx]) {
-        sweDay = sweWeeks[weekIdx].days.find(d => d.day === dayName);
+      const sweWeek = sweWeeks?.find(w => w.weekNumber === week.weekNumber);
+      if (sweWeek) {
+        sweDay = sweWeek.days.find(d => d.day === dayName);
       }
       
       days.push({
