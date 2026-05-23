@@ -41,17 +41,18 @@ export default function DayDetailsModal({ selectedDay, setSelectedDay, getDayPro
                 <ListChecks className="text-indigo-500" size={18} /> Granular Execution Checklist
               </h4>
               <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
-                {getDayProgress(selectedDay.weekNumber, selectedDay.day, selectedDay.instructions).done} / {selectedDay.instructions.length} Tasks
+                {getDayProgress(selectedDay.trackPrefix, selectedDay.weekNumber, selectedDay.day, selectedDay.instructions).done} / {selectedDay.instructions.length} Tasks
               </span>
             </div>
             
             <div className="space-y-3">
               {selectedDay.instructions.map((instruction, idx) => {
-                const isChecked = completedItems[`w${selectedDay.weekNumber}-${selectedDay.day}-i${idx}`];
+                const prefix = selectedDay.trackPrefix || 'w';
+                const isChecked = completedItems[`${prefix}${selectedDay.weekNumber}-${selectedDay.day}-i${idx}`];
                 return (
                   <div 
                     key={idx} 
-                    onClick={() => toggleInstruction(selectedDay.weekNumber, selectedDay.day, idx)}
+                    onClick={() => toggleInstruction(selectedDay.trackPrefix, selectedDay.weekNumber, selectedDay.day, idx)}
                     className={`flex gap-3 p-3 rounded-lg border cursor-pointer transition-all ${isChecked ? 'bg-emerald-50/50 border-emerald-200' : 'bg-white border-slate-200 hover:border-indigo-300 hover:shadow-sm'}`}
                   >
                     <div className={`shrink-0 mt-0.5 transition-colors ${isChecked ? 'text-emerald-500' : 'text-slate-300'}`}>

@@ -71,6 +71,7 @@ export default function WeeklyChecklist({
                 </div>
                 
                 <div className="space-y-3 flex-1 flex flex-col text-left">
+// ... existing code ...
                   {/* GTME Section */}
                   <div>
                     <h5 className="text-[10px] uppercase font-bold text-slate-400 mb-1">GTME Track</h5>
@@ -80,9 +81,30 @@ export default function WeeklyChecklist({
                           ${gtmeProgress.isAllDone 
                             ? 'bg-emerald-50 border-emerald-200 text-emerald-700' 
                             : 'bg-indigo-50 border-indigo-200 text-indigo-700 hover:bg-indigo-100'}`}
-                        onClick={() => setSelectedDay({ weekNumber: week.weekNumber, ...gtmeDay })}
+                        onClick={() => setSelectedDay({ trackPrefix: 'w', weekNumber: week.weekNumber, ...gtmeDay })}
                       >
                         <span className="font-medium truncate max-w-[100px]">{gtmeProgress.isAllDone ? "Completed" : "Pending"}</span>
+                        <ChevronRight size={14} />
+                      </div>
+                    ) : (
+                      <div className="text-xs p-2 rounded border border-slate-100 bg-slate-50 text-slate-400 text-center">
+                        Rest Day
+                      </div>
+                    )}
+                  </div>
+
+                  {/* SWE Upskilling Section */}
+                  <div className="pt-2">
+                    <h5 className="text-[10px] uppercase font-bold text-slate-400 mb-1">SWE Upskilling</h5>
+                    {sweDay ? (
+                      <div 
+                        className={`text-xs p-2 rounded border cursor-pointer flex items-center justify-between transition-colors
+                          ${sweProgress.isAllDone 
+                            ? 'bg-emerald-50 border-emerald-200 text-emerald-700' 
+                            : 'bg-indigo-50 border-indigo-200 text-indigo-700 hover:bg-indigo-100'}`}
+                        onClick={() => setSelectedDay({ trackPrefix: 'swe-w', weekNumber: week.weekNumber, ...sweDay })}
+                      >
+                        <span className="font-medium truncate max-w-[100px]">{sweProgress.isAllDone ? "Completed" : "Pending"}</span>
                         <ChevronRight size={14} />
                       </div>
                     ) : (
