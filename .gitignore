@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 .env
+
+# Blueprint & Plans
+*.pdf
+swe-plan.md
+parse_swe.cjs
