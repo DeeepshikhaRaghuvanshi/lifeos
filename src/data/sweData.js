@@ -1,345 +1,339 @@
 export const sweData = [
   {
-    "phase": "Month 1: DSA Core & ML Foundation",
+    "phase": "Month 1: DSA & ML Foundations",
     "weeks": [
       {
         "weekNumber": 1,
-        "title": "SWE Upskilling Week 1",
+        "title": "Arrays & Hashing (Easy/Med) & Python Setup",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Welcome to the Course! (0:56)'",
-              "Course: Watch/Practice 'COURSE OVERVIEW LECTURE - PLEASE DO NOT SKIP! (4:17)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Anaconda Python and Jupyter Install and Setup (13:49)'",
-              "Course: Watch/Practice 'Note on Environment Setup - Please read me! (0:34)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Environment Setup (9:08)'",
-              "Course: Watch/Practice 'Python Crash Course - Part One (16:07)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Python Crash Course - Part Two (12:07)'",
-              "Course: Watch/Practice 'Python Crash Course - Part Three (11:19)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Python Crash Course - Exercise Questions (1:29)'",
-              "Course: Watch/Practice 'Python Crash Course - Exercise Solutions (9:26)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Arrays & Hashing (Easy/Med) + Python Setup, NumPy, Pandas Se...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Course: Watch/Practice 'Machine Learning Pathway (10:16)'",
-              "Course: Watch/Practice 'Introduction to NumPy (2:14)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Arrays & Hashing (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Python Setup, NumPy, Pandas Series/DataFrames. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 2,
-        "title": "SWE Upskilling Week 2",
+        "title": "Two Pointers & Adv. Pandas (GroupBy",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'NumPy Arrays (22:41)'",
-              "Course: Watch/Practice 'NumPy Indexing and Selection (11:06)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'NumPy Operations (8:14)'",
-              "Course: Watch/Practice 'Numpy Exercises - Solutions (7:05)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Introduction to Pandas (4:40)'",
-              "Course: Watch/Practice 'Series - Part One (9:28)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Series - Part Two (10:41)'",
-              "Course: Watch/Practice 'DataFrames - Part One - Creating a DataFrame (19:27)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'DataFrames - Part Two - Basic Properties (8:18)'",
-              "Course: Watch/Practice 'DataFrames - Part Three - Working with Columns (13:57)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Two Pointers, Sliding Window + Adv. Pandas (GroupBy, Merges),...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'DataFrames - Part Four - Working with Rows (14:30)'",
-              "Course: Watch/Practice 'Pandas - Conditional Filtering (17:41)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Two Pointers, Sliding Window. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Adv. Pandas (GroupBy, Merges), Missing Data, Matplotlib. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 3,
-        "title": "SWE Upskilling Week 3",
+        "title": "Stack & Seaborn",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Pandas - Useful Methods (13:47)'",
-              "Course: Watch/Practice 'Pandas - Useful Methods Multiple Columns (17:23)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Pandas - Statistical Info & Sorting (15:48)'",
-              "Course: Watch/Practice 'Missing Data - Overview (11:58)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Missing Data - Pandas Operations (18:32)'",
-              "Course: Watch/Practice 'GroupBy Operations - Part One (15:49)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'GroupBy Operations - Part Two - MultiIndex (14:18)'",
-              "Course: Watch/Practice 'Combining DataFrames - Concatenation (10:24)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Combining DataFrames - Inner Merge (12:04)'",
-              "Course: Watch/Practice 'Combining DataFrames - Left and Right Merge (6:07)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Stack, Binary Search (Easy/Med) + Seaborn, Statistical Data Visu...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Combining DataFrames - Outer Merge (10:38)'",
-              "Course: Watch/Practice 'Pandas - Text Methods for String Data (16:05)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Stack, Binary Search (Easy/Med). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Seaborn, Statistical Data Visualization, ML Intro. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 4,
-        "title": "SWE Upskilling Week 4",
+        "title": "Linked Lists & Linear & Polynomial Regression",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Pandas - Time Methods for Date and Time Data (21:00)'",
-              "Course: Watch/Practice 'Pandas Input and Output (10:20)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Pandas Pivot Tables (21:15)'",
-              "Course: Watch/Practice 'Pandas Project Exercise (26:31)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Introduction to Matplotlib (4:06)'",
-              "Course: Watch/Practice 'Matplotlib Basics (12:35)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Matplotlib - Figure Object (7:32)'",
-              "Course: Watch/Practice 'Matplotlib - Subplots (19:17)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Matplotlib Styling (14:29)'",
-              "Course: Watch/Practice 'Matplotlib Exercise (16:39)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "DSA & Python Basics",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Linked Lists, Fundamental OOP + Linear & Polynomial Regression...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "DSA Practice (2 hours): Focus on Arrays, Strings, LinkedList, Stack, Queue. Source: NeetCode 150 / Striver A2Z.",
-              "Revise previous DSA patterns (30 mins).",
-              "Course: Watch/Practice 'Introduction to Seaborn (3:54)'",
-              "Course: Watch/Practice 'Scatterplots with Seaborn (18:19)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Linked Lists, Fundamental OOP. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Linear & Polynomial Regression, Gradient Descent. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
@@ -347,352 +341,340 @@ export const sweData = [
     ]
   },
   {
-    "phase": "Month 2: System Fundamentals & Advanced Models",
+    "phase": "Month 2: Intermediate Algorithms & ML Models",
     "weeks": [
       {
         "weekNumber": 5,
-        "title": "SWE Upskilling Week 5",
+        "title": "Trees (Traversals & Bias-Variance Trade-Off",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Distribution Plots (16:14)'",
-              "Course: Watch/Practice 'Categorical Plots (17:57)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Seaborn - Comparison Plots (9:47)'",
-              "Course: Watch/Practice 'Seaborn Grid Plots (13:39)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Seaborn - Matrix Plots (13:18)'",
-              "Course: Watch/Practice 'Seaborn Plot Exercises (14:33)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Capstone Project Solutions - Part 1 (17:15)'",
-              "Course: Watch/Practice 'Capstone Project Solutions - Part 2 (14:50)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Capstone Project Solutions - Part 3 (19:49)'",
-              "Course: Watch/Practice 'Why Machine Learning? (9:15)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Trees (Traversals, BST) + Bias-Variance Trade-Off, Regul...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Supervised ML Process (13:41)'",
-              "Course: Watch/Practice 'Linear Regression - Theory (15:43)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Trees (Traversals, BST). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Bias-Variance Trade-Off, Regularization (L1 Lasso, L2 Ridge). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 6,
-        "title": "SWE Upskilling Week 6",
+        "title": "Tries & Logistic Regression",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Linear Regression - Gradient Descent (11:59)'",
-              "Course: Watch/Practice 'Python coding Simple Linear Regression (19:37)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Scikit-Learn Train Test Split (15:48)'",
-              "Course: Watch/Practice 'Scikit-Learn Performance Evaluation (15:44)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Linear Regression - Residual Plots (13:57)'",
-              "Course: Watch/Practice 'Polynomial Regression - Theory (7:59)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Polynomial Regression - Features (10:54)'",
-              "Course: Watch/Practice 'Polynomial Regression - Evaluation (9:44)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Bias Variance Trade-Off (10:34)'",
-              "Course: Watch/Practice 'Regularization Overview (6:39)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "OOP, DBMS & ML Path",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Tries, Heap / Priority Queue + Logistic Regression, Maximum L...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "OOP Concepts (1 hour): The Big 4 (Encapsulation, Inheritance, Polymorphism, Abstraction) + SOLID principles.",
-              "DBMS (1 hour): SQL Queries, Joins, Normalization, ACID properties. Source: Gate Smashers, LeetCode SQL 50.",
-              "Course: Watch/Practice 'Feature Scaling (9:59)'",
-              "Course: Watch/Practice 'Cross Validation (12:53)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Tries, Heap / Priority Queue. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Logistic Regression, Maximum Likelihood, Classification Metrics. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 7,
-        "title": "SWE Upskilling Week 7",
+        "title": "Core DBMS & K-Nearest Neighbors (KNN)",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'L2 Ridge Regression (14:29)'",
-              "Course: Watch/Practice 'L1 Lasso Regression (15:01)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Elastic Net (18:07)'",
-              "Course: Watch/Practice 'Dealing with Outliers (26:33)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Dealing with Missing Data (20:40)'",
-              "Course: Watch/Practice 'Dealing with Categorical Data (12:46)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Grid Search (12:14)'",
-              "Course: Watch/Practice 'Logistic Regression - Theory (17:00)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Logistic Regression - Math (15:42)'",
-              "Course: Watch/Practice 'Classification Metrics - Confusion Matrix (9:45)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Core DBMS, SQL Queries, Joins + K-Nearest Neighbors (KNN), Sup...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Classification Metrics - ROC Curves (7:13)'",
-              "Course: Watch/Practice 'Multi-Class Classification (15:47)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Core DBMS, SQL Queries, Joins. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): K-Nearest Neighbors (KNN), Support Vector Machines (SVM). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 8,
-        "title": "SWE Upskilling Week 8",
+        "title": "Backtracking (Subsets & Natural Language Processing (NLP)",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'KNN Classification - Theory (11:18)'",
-              "Course: Watch/Practice 'KNN Coding with Python (23:25)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'SVM - Theory and Intuition (20:50)'",
-              "Course: Watch/Practice 'SVM with Scikit-Learn (16:02)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Constructing Decision Trees (11:24)'",
-              "Course: Watch/Practice 'Coding Decision Trees (20:55)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Random Forests - Theory (11:38)'",
-              "Course: Watch/Practice 'Coding Random Forest Regressor (22:22)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'AdaBoost Theory and Intuition (19:51)'",
-              "Course: Watch/Practice 'Gradient Boosting Coding (12:48)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "OS, CN & Adv ML",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Backtracking (Subsets, Permutations) + Natural Language Processing (N...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Operating Systems (1 hour): Process vs Thread, CPU Scheduling, Deadlock, Memory Management.",
-              "Computer Networks (1 hour): OSI vs TCP/IP, DNS, Subnetting, 3-way handshake.",
-              "Course: Watch/Practice 'Naive Bayes Algorithm (17:55)'",
-              "Course: Watch/Practice 'Natural Language Processing (11:23)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Backtracking (Subsets, Permutations). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Natural Language Processing (NLP), Naive Bayes. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
@@ -700,287 +682,340 @@ export const sweData = [
     ]
   },
   {
-    "phase": "Month 3: ML Projects & System Architecture",
+    "phase": "Month 3: Advanced Systems & AI Deployment",
     "weeks": [
       {
         "weekNumber": 9,
-        "title": "SWE Upskilling Week 9",
+        "title": "Advanced Graphs (BFS/DFS Matrices) & Decision Trees (Gini Impurity)",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces.",
-              "Course: Watch/Practice 'K-Means Clustering Theory (11:30)'",
-              "Course: Watch/Practice 'K-Means Coding (19:48)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces.",
-              "Course: Watch/Practice 'Hierarchical Clustering (16:12)'",
-              "Course: Watch/Practice 'DBSCAN - Theory and Intuition (17:26)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces.",
-              "Course: Watch/Practice 'PCA Theory and Intuition (10:24)'",
-              "Course: Watch/Practice 'PCA - SciKit-Learn (12:09)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces.",
-              "Course: Watch/Practice 'Model Deployment as API (17:00)'"
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Advanced Graphs (BFS/DFS Matrices) + Decision Trees (Gini Impurity)...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Advanced Graphs (BFS/DFS Matrices). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Decision Trees (Gini Impurity), Random Forests. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 10,
-        "title": "SWE Upskilling Week 10",
+        "title": "1D/2D Dynamic Programming (DP) & Boosting Methods (AdaBoost",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: 1D/2D Dynamic Programming (DP) + Boosting Methods (AdaBoost, Gr...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in 1D/2D Dynamic Programming (DP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Boosting Methods (AdaBoost, Gradient Boosting). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 11,
-        "title": "SWE Upskilling Week 11",
+        "title": "OS Fundamentals & Unsupervised Learning (K-Means",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: OS Fundamentals, Process/Threads + Unsupervised Learning (K-Means...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in OS Fundamentals, Process/Threads. Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Unsupervised Learning (K-Means, DBSCAN, Hierarchical). Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
       },
       {
         "weekNumber": 12,
-        "title": "SWE Upskilling Week 12",
+        "title": "Computer Networks (TCP/IP & Principal Component Analysis (PCA)",
         "days": [
           {
             "day": "Monday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Tuesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Wednesday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Thursday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Friday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Saturday",
-            "type": "Coding",
-            "task": "Projects & Deployments",
-            "description": "Executing the Ultimate Tech Placement Blueprint + ML Masterclass.",
+            "type": "Execution",
+            "task": "Deep Work: Computer Networks (TCP/IP, HTTP) + Principal Component Analysis (...",
+            "description": "Tripartite Execution: 90m Algorithmic Deep Work, 90m ML Theory & Code, 30-60m Synthesis.",
             "instructions": [
-              "Development Projects: Build 3 real projects (CRUD, API integration, Live deployed). E.g., Deploy ML Models on Streamlit/Hugging Face Spaces."
+              "[Phase 1] Algorithmic Deep Work (90m): 1-2 Problems in Computer Networks (TCP/IP, HTTP). Try for 30-40m independently. If stuck, study walkthrough & pattern invariant.",
+              "[Phase 2] ML Theory & Code (90m): Principal Component Analysis (PCA), Model Deployment APIs. Execute theory immediately followed by Scikit-Learn/Pandas implementations.",
+              "[Phase 3] Synthesis & Documentation (30-60m): Explicitly write relationships between algorithmic patterns and ML code execution."
             ]
           },
           {
             "day": "Sunday",
-            "type": "Rest",
-            "task": "Weekly Revision & Rest",
-            "description": "Consolidate learning. Read articles on International Opportunities or review your ML roadmap.",
+            "type": "Revision",
+            "task": "Mandatory Revise/Buffer Protocol",
+            "description": "Strictly reserved for reviewing failure points, refactoring suboptimal code, and preventing cognitive overload.",
             "instructions": [
-              "Revise notes and organize GitHub repository."
+              "Review Mistake Log: Analyze failed algorithmic patterns from earlier in the week.",
+              "Spaced Repetition: Revisit problems solved on days 3, 7, and 14 to enforce muscle memory.",
+              "Refactor ML Code: Transition unstructured procedural code into robust OOP structures.",
+              "NO NEW CONCEPTS: Do not introduce new ML theory or algorithms today."
             ]
           }
         ]
