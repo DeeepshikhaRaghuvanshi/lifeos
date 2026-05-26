@@ -7,20 +7,37 @@ import { isConfigured } from './config/firebase';
 import Header from './components/Layout/Header';
 import LoginScreen from './components/Auth/LoginScreen';
 import SetupScreen from './components/Auth/SetupScreen';
-import PhaseNavigation from './components/Dashboard/PhaseNavigation';
 import DashboardView from './components/Dashboard/DashboardView';
 import WeeklyGrid from './components/Dashboard/WeeklyGrid';
+import SweView from './components/Views/SweView';
+import HabitsView from './components/Views/HabitsView';
 import DayDetailsModal from './components/Modals/DayDetailsModal';
 import ResourcesModal from './components/Modals/ResourcesModal';
+import BottomNav from './components/Layout/BottomNav';
 
 export default function App() {
   const [isLocalMode, setIsLocalMode] = useState(false);
-  const [activePhase, setActivePhase] = useState(0);
   const [selectedDay, setSelectedDay] = useState(null);
   const [showResources, setShowResources] = useState(false);
+  
+  // Isolate navigation state per tab to ensure it persists during navigation
+  const [tabState, setTabState] = useState({
+    dashboard: { phase: 0, week: 0 },
+    gtme: { phase: 0 },
+    swe: { phase: 1 }, // SWE starts at Month 2
+    habits: { phase: 0 }
+  });
 
   const auth = useAuth(isLocalMode, setIsLocalMode, () => {});
   const tracker = useProgressTracker(auth.user, isLocalMode);
+
+  // Helper to update specific tab state
+  const updateTabState = (tab, newState) => {
+    setTabState(prev => ({
+      ...prev,
+      [tab]: { ...prev[tab], ...newState }
+    }));
+  };
 
   // Re-bind the external reset hook for logout
   const handleLogout = async () => {
@@ -41,7 +58,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-12 relative">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-24 lg:pb-12 relative">
       <Header 
         isLocalMode={isLocalMode} 
         user={auth.user} 
@@ -51,16 +68,12 @@ export default function App() {
         handleLogout={handleLogout} 
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <PhaseNavigation 
-          activePhase={activePhase} 
-          setActivePhase={setActivePhase} 
-        />
-        
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 lg:mt-8">
         <Routes>
           <Route path="/" element={
             <DashboardView 
-              activePhase={activePhase}
+              state={tabState.dashboard}
+              setState={(s) => updateTabState('dashboard', s)}
               completedItems={tracker.completedItems}
               streak={tracker.streak}
               toggleHabit={tracker.toggleHabit}
@@ -70,9 +83,26 @@ export default function App() {
           } />
           <Route path="/gtme" element={
             <WeeklyGrid 
-              activePhase={activePhase} 
+              state={tabState.gtme}
+              setState={(s) => updateTabState('gtme', s)}
               getDayProgress={tracker.getDayProgress} 
               setSelectedDay={setSelectedDay} 
+            />
+          } />
+          <Route path="/swe" element={
+            <SweView 
+              state={tabState.swe}
+              setState={(s) => updateTabState('swe', s)}
+              getDayProgress={tracker.getDayProgress} 
+              setSelectedDay={setSelectedDay} 
+            />
+          } />
+          <Route path="/habits" element={
+            <HabitsView 
+              state={tabState.habits}
+              setState={(s) => updateTabState('habits', s)}
+              completedItems={tracker.completedItems}
+              toggleHabit={tracker.toggleHabit}
             />
           } />
           <Route path="*" element={<Navigate to="/" replace />} />
@@ -91,6 +121,8 @@ export default function App() {
         showResources={showResources} 
         setShowResources={setShowResources} 
       />
+
+      <BottomNav />
     </div>
   );
 }

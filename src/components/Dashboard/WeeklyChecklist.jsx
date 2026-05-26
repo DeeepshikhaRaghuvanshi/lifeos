@@ -1,5 +1,6 @@
 
 import { ChevronRight, Calendar } from 'lucide-react';
+import { generateHabitId } from '../../utils/idGenerator';
 
 const EXTRA_HABITS = [
   { id: 'meditation', label: 'Meditation' },
@@ -10,6 +11,7 @@ const EXTRA_HABITS = [
 const DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 export default function WeeklyChecklist({ 
+  isDashboard,
   gtmeWeek, 
   sweWeek,
   completedItems, 
@@ -18,7 +20,10 @@ export default function WeeklyChecklist({
   setSelectedDay
 }) {
   const weekNumber = gtmeWeek?.weekNumber || sweWeek?.weekNumber;
-  const title = gtmeWeek?.title || sweWeek?.title || "Focus Week";
+  const rawTitle = gtmeWeek?.title || sweWeek?.title || "Focus Week";
+  
+  // Use a generic title on the dashboard to encompass all tracks
+  const title = isDashboard ? "Execution Plan" : rawTitle;
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mt-6">
@@ -51,7 +56,8 @@ export default function WeeklyChecklist({
             }
 
             EXTRA_HABITS.forEach(habit => {
-              if (completedItems[`habit-w${weekNumber}-${dayName}-${habit.id}`]) {
+              const id = generateHabitId(weekNumber, dayName, habit.id);
+              if (completedItems[id]) {
                 dayDone++;
               }
             });
@@ -125,7 +131,7 @@ export default function WeeklyChecklist({
                      <h5 className="text-[10px] uppercase font-bold text-slate-400 mb-2">Daily Habits</h5>
                      <div className="space-y-2">
                        {EXTRA_HABITS.map(habit => {
-                         const id = `habit-w${weekNumber}-${dayName}-${habit.id}`;
+                         const id = generateHabitId(weekNumber, dayName, habit.id);
                          const isCompleted = !!completedItems[id];
                          
                          return (
