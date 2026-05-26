@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const CircularProgress = ({ value, label, sublabel, colorClass, strokeClass }) => {
   const radius = 36;

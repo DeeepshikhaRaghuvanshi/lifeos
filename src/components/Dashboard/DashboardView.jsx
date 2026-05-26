@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ProgressOverview from './ProgressOverview';
 import MonthHeatmap from './MonthHeatmap';
 import WeeklyChecklist from './WeeklyChecklist';
