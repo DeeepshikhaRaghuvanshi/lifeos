@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { getTypeStyles } from '../../utils/helpers';
 
 export default function DayCard({ day, weekNumber, dayProgress, setSelectedDay }) {
