@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Trophy, Code } from 'lucide-react';
 import { isLocalhost } from '../../config/firebase';
 

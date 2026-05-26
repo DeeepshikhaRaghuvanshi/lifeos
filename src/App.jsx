@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './hooks/useAuth';
 import { useProgressTracker } from './hooks/useProgressTracker';
 import { isConfigured } from './config/firebase';
@@ -8,6 +9,7 @@ import LoginScreen from './components/Auth/LoginScreen';
 import SetupScreen from './components/Auth/SetupScreen';
 import PhaseNavigation from './components/Dashboard/PhaseNavigation';
 import DashboardView from './components/Dashboard/DashboardView';
+import WeeklyGrid from './components/Dashboard/WeeklyGrid';
 import DayDetailsModal from './components/Modals/DayDetailsModal';
 import ResourcesModal from './components/Modals/ResourcesModal';
 
@@ -16,9 +18,8 @@ export default function App() {
   const [activePhase, setActivePhase] = useState(0);
   const [selectedDay, setSelectedDay] = useState(null);
   const [showResources, setShowResources] = useState(false);
-  const [resetKey, setResetKey] = useState(0);
 
-  const auth = useAuth(isLocalMode, setIsLocalMode, () => setResetKey(k => k + 1));
+  const auth = useAuth(isLocalMode, setIsLocalMode, () => {});
   const tracker = useProgressTracker(auth.user, isLocalMode);
 
   // Re-bind the external reset hook for logout
@@ -56,14 +57,26 @@ export default function App() {
           setActivePhase={setActivePhase} 
         />
         
-        <DashboardView 
-          activePhase={activePhase}
-          completedItems={tracker.completedItems}
-          streak={tracker.streak}
-          toggleHabit={tracker.toggleHabit}
-          getDayProgress={tracker.getDayProgress}
-          setSelectedDay={setSelectedDay}
-        />
+        <Routes>
+          <Route path="/" element={
+            <DashboardView 
+              activePhase={activePhase}
+              completedItems={tracker.completedItems}
+              streak={tracker.streak}
+              toggleHabit={tracker.toggleHabit}
+              getDayProgress={tracker.getDayProgress}
+              setSelectedDay={setSelectedDay}
+            />
+          } />
+          <Route path="/gtme" element={
+            <WeeklyGrid 
+              activePhase={activePhase} 
+              getDayProgress={tracker.getDayProgress} 
+              setSelectedDay={setSelectedDay} 
+            />
+          } />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
 
       <DayDetailsModal 

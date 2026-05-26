@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Bookmark, X, ExternalLink } from 'lucide-react';
 import { resourceData } from '../../data/resourceData';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar } from 'lucide-react';
 import DayCard from './DayCard';
 import { scheduleData } from '../../data/scheduleData';
@@ -19,8 +18,8 @@ export default function WeeklyGrid({ activePhase, getDayProgress, setSelectedDay
 
             <div className="p-3 space-y-3 flex-1 bg-slate-50/50">
               {week.days.map((day, idx) => {
-                const dayProgress = getDayProgress(week.weekNumber, day.day, day.instructions);
-                return <DayCard key={idx} day={day} weekNumber={week.weekNumber} dayProgress={dayProgress} setSelectedDay={setSelectedDay} />;
+                const dayProgress = getDayProgress('w', week.weekNumber, day.day, day.instructions);
+                return <DayCard key={idx} day={day} weekNumber={week.weekNumber} dayProgress={dayProgress} setSelectedDay={(data) => setSelectedDay({ trackPrefix: 'w', ...data })} />;
               })}
             </div>
           </div>

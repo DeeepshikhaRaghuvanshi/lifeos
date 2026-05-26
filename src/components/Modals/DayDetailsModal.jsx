@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Calendar, X, ListChecks, Info, Bookmark, ExternalLink, CheckSquare, Square } from 'lucide-react';
 import { getTypeStyles, renderTextWithLinks } from '../../utils/helpers';
 
