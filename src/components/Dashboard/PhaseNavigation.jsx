@@ -1,13 +1,24 @@
-import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { scheduleData } from '../../data/scheduleData';
 import { sweData } from '../../data/sweData';
 
 export default function PhaseNavigation({ activePhase, setActivePhase }) {
-  const totalPhases = Math.max(scheduleData.length, sweData.length);
+  const location = useLocation();
+  const isGtmePage = location.pathname === '/gtme';
+  
+  // On GTME page, only show months that have GTME data
+  // On Dashboard, show max months across all tracks
+  const totalPhases = isGtmePage ? scheduleData.length : Math.max(scheduleData.length, sweData.length);
+  
   const phases = [];
   for (let i = 0; i < totalPhases; i++) {
     const title = scheduleData[i]?.phase?.split(':')[0] || sweData[i]?.phase?.split(':')[0] || `Month ${i + 1}`;
     phases.push(title);
+  }
+
+  // Safety check: if activePhase is out of bounds for the current view, reset it to the last available month
+  if (activePhase >= totalPhases) {
+    setActivePhase(totalPhases - 1);
   }
 
   return (
