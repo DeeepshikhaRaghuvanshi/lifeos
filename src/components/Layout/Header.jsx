@@ -1,15 +1,15 @@
-import React from 'react';
-import { Trophy, Bookmark, Printer, LogOut, Code, Flame } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { Trophy, Bookmark, Printer, LogOut, Code, Flame, LayoutDashboard, ListChecks } from 'lucide-react';
 
 export default function Header({ isLocalMode, user, progress, streak, setShowResources, handleLogout }) {
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-10 print:hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-0">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Trophy className="text-indigo-600" size={28} />
             <div className="flex items-center gap-3">
-              <h1 className="text-xl font-bold text-slate-900 hidden sm:block">GTM Engineering Tracker</h1>
+              <h1 className="text-xl font-bold text-slate-900 hidden sm:block">LifeOS</h1>
               {isLocalMode && (
                 <span className="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md border border-amber-200 uppercase tracking-wide flex items-center gap-1">
                   <Code size={12}/> Local Dev Mode
@@ -32,8 +32,24 @@ export default function Header({ isLocalMode, user, progress, streak, setShowRes
             </button>
           </div>
         </div>
+
+        {/* Navigation Tabs */}
+        <div className="flex items-center gap-8 mt-6">
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => `flex items-center gap-2 py-3 border-b-2 font-bold text-sm transition-all ${isActive ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'}`}
+          >
+            <LayoutDashboard size={18} /> Dashboard
+          </NavLink>
+          <NavLink 
+            to="/gtme" 
+            className={({ isActive }) => `flex items-center gap-2 py-3 border-b-2 font-bold text-sm transition-all ${isActive ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'}`}
+          >
+            <ListChecks size={18} /> GTME Tracker
+          </NavLink>
+        </div>
         
-        <div className="mt-6">
+        <div className="py-4 border-t border-slate-100">
           <div className="flex justify-between items-center text-sm font-medium text-slate-600 mb-2">
             <div className="flex items-center gap-4">
               <span>Overall Progress ({progress}%)</span>
