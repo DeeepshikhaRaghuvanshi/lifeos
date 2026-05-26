@@ -26,12 +26,12 @@ export default function PhaseNavigation({ activePhase, setActivePhase }) {
   }
 
   return (
-    <div className="flex space-x-1 bg-slate-200/50 p-1 rounded-lg mb-8 overflow-x-auto print:hidden">
+    <div className="flex space-x-1 bg-slate-200/50 p-1 rounded-lg mb-8 overflow-x-auto print:hidden no-scrollbar">
       {phases.map((phase) => (
         <button
           key={phase.id}
           onClick={() => setActivePhase(phase.id)}
-          className={`flex-1 whitespace-nowrap px-4 py-2.5 text-sm font-semibold rounded-md transition-all ${activePhase === phase.id ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`}
+          className={`flex-1 whitespace-nowrap px-4 py-3 lg:py-2.5 text-xs lg:text-sm font-semibold rounded-md transition-all ${activePhase === phase.id ? 'bg-white text-indigo-700 shadow-sm' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`}
         >
           {phase.title}
         </button>

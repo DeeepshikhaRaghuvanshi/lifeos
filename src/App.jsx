@@ -13,6 +13,7 @@ import SweView from './components/Views/SweView';
 import HabitsView from './components/Views/HabitsView';
 import DayDetailsModal from './components/Modals/DayDetailsModal';
 import ResourcesModal from './components/Modals/ResourcesModal';
+import BottomNav from './components/Layout/BottomNav';
 
 export default function App() {
   const [isLocalMode, setIsLocalMode] = useState(false);
@@ -57,7 +58,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-12 relative">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-24 lg:pb-12 relative">
       <Header 
         isLocalMode={isLocalMode} 
         user={auth.user} 
@@ -67,7 +68,7 @@ export default function App() {
         handleLogout={handleLogout} 
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 lg:mt-8">
         <Routes>
           <Route path="/" element={
             <DashboardView 
@@ -120,6 +121,8 @@ export default function App() {
         showResources={showResources} 
         setShowResources={setShowResources} 
       />
+
+      <BottomNav />
     </div>
   );
 }

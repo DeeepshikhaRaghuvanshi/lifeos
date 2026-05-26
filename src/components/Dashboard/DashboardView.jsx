@@ -53,10 +53,10 @@ export default function DashboardView({
       />
 
       <div className="space-y-4">
-        <div className="flex items-center justify-between bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <h3 className="font-bold text-slate-800 flex items-center gap-2">
+        <div className="flex items-center justify-between bg-white p-3 lg:p-4 rounded-xl border border-slate-200 shadow-sm sticky top-[72px] lg:static z-20">
+          <h3 className="font-bold text-slate-800 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
             Weekly Execution
-            <span className="text-xs font-normal text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full uppercase tracking-wider">
+            <span className="text-[10px] lg:text-xs font-normal text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full uppercase tracking-wider w-fit">
               Week {activeWeekIndex + 1} of {combinedWeeks.length}
             </span>
           </h3>
@@ -64,14 +64,14 @@ export default function DashboardView({
             <button 
               onClick={handlePrevWeek}
               disabled={activeWeekIndex === 0}
-              className={`p-2 rounded-lg border transition-all ${activeWeekIndex === 0 ? 'bg-slate-50 text-slate-300 border-slate-100' : 'bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-600'}`}
+              className={`p-2.5 lg:p-2 rounded-lg border transition-all ${activeWeekIndex === 0 ? 'bg-slate-50 text-slate-300 border-slate-100' : 'bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-600'}`}
             >
               <ChevronLeft size={20} />
             </button>
             <button 
               onClick={handleNextWeek}
               disabled={activeWeekIndex === combinedWeeks.length - 1}
-              className={`p-2 rounded-lg border transition-all ${activeWeekIndex === combinedWeeks.length - 1 ? 'bg-slate-50 text-slate-300 border-slate-100' : 'bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-600'}`}
+              className={`p-2.5 lg:p-2 rounded-lg border transition-all ${activeWeekIndex === combinedWeeks.length - 1 ? 'bg-slate-50 text-slate-300 border-slate-100' : 'bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-600'}`}
             >
               <ChevronRight size={20} />
             </button>
