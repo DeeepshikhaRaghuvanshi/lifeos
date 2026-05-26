@@ -45,24 +45,26 @@ export default function MonthHeatmap({
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8 overflow-x-auto">
+    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-4 lg:p-6 mb-8 overflow-hidden">
       <h2 className="text-lg font-bold text-slate-800 mb-4">Monthly Heatmap</h2>
-      <div className="flex">
-        {/* Habit Labels Column */}
-        <div className="flex flex-col justify-between pr-4 mt-6 space-y-2">
+      
+      {/* Scrollable Container */}
+      <div className="relative flex overflow-x-auto no-scrollbar pb-2">
+        {/* Habit Labels Column - Sticky on mobile */}
+        <div className="sticky left-0 z-10 flex flex-col justify-between pr-4 mt-6 space-y-2 bg-white/95 backdrop-blur-sm">
           {HABITS.map(habit => (
-            <div key={habit.id} className="text-xs font-semibold text-slate-500 h-5 flex items-center justify-end">
+            <div key={habit.id} className="text-[10px] lg:text-xs font-bold text-slate-500 h-5 lg:h-6 flex items-center justify-end whitespace-nowrap">
               {habit.label}
             </div>
           ))}
         </div>
         
-        {/* Heatmap Grid */}
-        <div className="flex-1 ml-2">
+        {/* Heatmap Grid - With min-width to ensure square size */}
+        <div className="flex-1 min-w-[700px]">
           {/* Day Numbers Row */}
           <div className="grid grid-cols-[repeat(28,minmax(0,1fr))] gap-1 mb-2">
             {days.map((_, idx) => (
-              <div key={idx} className="flex items-center justify-center text-[10px] text-slate-400 font-medium truncate">
+              <div key={idx} className="flex items-center justify-center text-[10px] text-slate-400 font-bold">
                 {idx + 1}
               </div>
             ))}
@@ -70,7 +72,7 @@ export default function MonthHeatmap({
 
           <div className="flex flex-col space-y-2">
             {HABITS.map(habit => (
-              <div key={habit.id} className="grid grid-cols-[repeat(28,minmax(0,1fr))] gap-1 h-5 md:h-6">
+              <div key={habit.id} className="grid grid-cols-[repeat(28,minmax(0,1fr))] gap-1 h-5 lg:h-6">
                 {days.map((day, idx) => {
                   const completed = isHabitCompleted(day.weekNumber, day.dayName, habit.id, day);
                   
@@ -86,8 +88,8 @@ export default function MonthHeatmap({
                       key={idx}
                       title={`${habit.label} - Week ${day.weekNumber} ${day.dayName}`}
                       className={`w-full h-full rounded-sm transition-all duration-200 ${
-                        isWeekendAndRest ? 'bg-slate-100' :
-                        completed ? 'bg-emerald-500' : 'bg-slate-200'
+                        isWeekendAndRest ? 'bg-slate-50 border border-slate-100/50' :
+                        completed ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.3)]' : 'bg-slate-200'
                       }`}
                     />
                   );
@@ -96,6 +98,11 @@ export default function MonthHeatmap({
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Mobile Hint */}
+      <div className="lg:hidden flex items-center justify-center gap-2 mt-4 text-[10px] text-slate-400 font-medium italic">
+        <span>← Swipe to view more days →</span>
       </div>
     </div>
   );
