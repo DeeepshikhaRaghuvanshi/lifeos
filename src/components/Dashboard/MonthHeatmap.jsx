@@ -71,15 +71,35 @@ export default function MonthHeatmap({
       </div>
       
       {/* 2. Main Data Region - High Density */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden group">
+        
+        {/* MOBILE ONLY: Frozen Overlay Panel (Outside scrollable layer) */}
+        <div className="lg:hidden absolute left-0 top-0 bottom-0 z-30 w-32 bg-white pointer-events-none flex flex-col p-4 overflow-hidden">
+           {/* Vertical Spacer for Axis */}
+           <div className="h-6 mb-3"></div>
+           {/* Habit Label Column (Cloned for fixed position) */}
+           <div className="space-y-1.5 flex flex-col flex-1">
+             {HABITS.map(habit => (
+               <div key={habit.id} className="h-[21px] flex items-center justify-end pr-3">
+                 <span className="text-[9px] font-black text-slate-600 uppercase tracking-tight whitespace-nowrap">
+                   {habit.label}
+                 </span>
+               </div>
+             ))}
+           </div>
+           {/* Smooth Mask Edge Transition - Strictly clipped inside panel */}
+           <div className="absolute top-0 bottom-0 right-0 w-4 bg-gradient-to-r from-white to-transparent translate-x-full"></div>
+        </div>
+
+        {/* Scrollable Container */}
         <div className="overflow-x-auto no-scrollbar scroll-smooth">
-          <div className="inline-block min-w-full align-middle p-4 lg:p-6 pr-12 lg:pr-16">
+          <div className="inline-block min-w-full align-middle p-4 lg:p-6">
             <div className="flex flex-col">
               
               {/* Day Markers Axis - Aligned 1:1 with grid */}
               <div className="flex items-center mb-3">
-                {/* Frozen Axis Label Area */}
-                <div className="sticky left-0 z-30 w-24 lg:w-36 shrink-0 bg-gradient-to-r from-white from-80% to-transparent h-6 -mr-8 pr-8"></div>
+                {/* Horizontal Spacer for Labels (Matches Overlay Width) */}
+                <div className="w-32 lg:w-32 shrink-0 pr-3"></div>
                 
                 <div className="flex gap-1 lg:gap-1.5 ml-2">
                   {days.map((_, idx) => (
@@ -96,12 +116,15 @@ export default function MonthHeatmap({
               <div className="space-y-1.5">
                 {HABITS.map(habit => (
                   <div key={habit.id} className="flex items-center group/row">
-                    {/* Frozen Label Column with Fade Mask */}
-                    <div className="sticky left-0 z-30 w-24 lg:w-36 shrink-0 flex items-center justify-end pr-8 bg-gradient-to-r from-white from-80% to-transparent py-1.5 -mr-8">
-                      <span className="text-[9px] lg:text-[11px] font-black text-slate-600 whitespace-nowrap uppercase tracking-tight group-hover/row:text-indigo-600 transition-colors">
+                    {/* Habit Label Column (Desktop only | Mobile is handled by overlay above) */}
+                    <div className="hidden lg:flex w-32 shrink-0 items-center justify-end pr-3 py-1.5 transition-colors">
+                      <span className="text-[11px] font-black text-slate-600 whitespace-nowrap uppercase tracking-tight group-hover/row:text-indigo-600 transition-colors">
                         {habit.label}
                       </span>
                     </div>
+
+                    {/* Mobile Label Spacer (Matches overlay width) */}
+                    <div className="lg:hidden w-32 shrink-0 h-[21px]"></div>
 
                     {/* Data Cells */}
                     <div className="flex gap-1 lg:gap-1.5 ml-2">

@@ -58,7 +58,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-24 lg:pb-12 relative">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-32 lg:pb-12 relative">
       <Header 
         isLocalMode={isLocalMode} 
         user={auth.user} 
