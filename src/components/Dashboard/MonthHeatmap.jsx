@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from 'react';
 import { generateHabitId } from '../../utils/idGenerator';
 
 const HABITS = [
@@ -15,6 +16,23 @@ export default function MonthHeatmap({
   completedItems, 
   getDayProgress 
 }) {
+  const scrollRef = useRef(null);
+  // Fade is shown only when content is mid-scroll (not at either extreme)
+  const [showFade, setShowFade] = useState(false);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const handleScroll = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = el;
+      const atStart = scrollLeft <= 0;
+      const atEnd = scrollLeft >= scrollWidth - clientWidth - 1;
+      setShowFade(!atStart && !atEnd);
+    };
+    el.addEventListener('scroll', handleScroll, { passive: true });
+    return () => el.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const days = [];
   combinedWeeks.forEach(({ gtme, swe }) => {
     DAYS_OF_WEEK.forEach(dayName => {
@@ -71,15 +89,20 @@ export default function MonthHeatmap({
       </div>
       
       {/* 2. Main Data Region - High Density */}
-      {/* z-0 establishes a stacking context so overflow-hidden reliably clips z-30 children on mobile */}
-      <div className="relative overflow-hidden group z-0">
+      <div className="relative overflow-hidden group">
         
-        {/* MOBILE ONLY: Frozen Overlay Panel (Outside scrollable layer) */}
-        {/* -left-px + extra width seals any sub-pixel gap between card border and overlay left edge */}
-        <div className="lg:hidden absolute -left-px top-0 bottom-0 z-30 w-[calc(8rem+1px)] bg-white pointer-events-none flex flex-col p-4 overflow-hidden">
+        {/* MOBILE ONLY: Frozen Overlay Panel */}
+        {/*
+          The overlay sits at left-0 of this wrapper.
+          The scrollable container below is shifted right by ml-32 on mobile,
+          so its clipping left-edge aligns with the overlay's right edge.
+          Data cells are therefore PHYSICALLY CONTAINED within the scroll container
+          and can never appear behind the overlay — no z-index tricks needed.
+        */}
+        <div className="lg:hidden absolute left-0 top-0 bottom-0 z-30 w-32 bg-white pointer-events-none flex flex-col p-4 overflow-hidden">
            {/* Vertical Spacer for Axis */}
            <div className="h-6 mb-3"></div>
-           {/* Habit Label Column (Cloned for fixed position) */}
+           {/* Habit Label Column */}
            <div className="space-y-1.5 flex flex-col flex-1">
              {HABITS.map(habit => (
                <div key={habit.id} className="h-[21px] flex items-center justify-end pr-3">
@@ -89,19 +112,31 @@ export default function MonthHeatmap({
                </div>
              ))}
            </div>
-           {/* Smooth Mask Edge Transition - Strictly clipped inside panel */}
-           <div className="absolute top-0 bottom-0 right-0 w-4 bg-gradient-to-r from-white to-transparent translate-x-full"></div>
         </div>
 
-        {/* Scrollable Container */}
-        <div className="overflow-x-auto no-scrollbar scroll-smooth">
-          <div className="inline-block min-w-full align-middle p-4 lg:p-6">
+        {/*
+          Dynamic Fade — sibling of the overlay, positioned at the overlay's right edge (left-32).
+          Shown only when the user is mid-scroll (not at start, not at end).
+          This signals "content is hidden behind the label panel."
+        */}
+        {showFade && (
+          <div className="lg:hidden absolute top-0 bottom-0 left-32 z-20 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+        )}
+
+        {/*
+          Scrollable Container.
+          On mobile: ml-32 shifts it right so its left clipping edge = overlay right edge (x=128).
+          Data cells inside can never appear at x < 128 in the viewport — the container clips them.
+          On desktop: lg:ml-0 restores normal layout (no overlay, no shift needed).
+        */}
+        <div ref={scrollRef} className="overflow-x-auto no-scrollbar scroll-smooth ml-32 lg:ml-0">
+          <div className="inline-block min-w-full align-middle pt-4 pr-4 pb-4 pl-0 lg:p-6">
             <div className="flex flex-col">
               
-              {/* Day Markers Axis - Aligned 1:1 with grid */}
+              {/* Day Markers Axis */}
               <div className="flex items-center mb-3">
-                {/* Horizontal Spacer for Labels (Matches Overlay Width) */}
-                <div className="w-32 lg:w-32 shrink-0 pr-3"></div>
+                {/* Spacer — desktop only. Mobile uses ml-32 on the container instead. */}
+                <div className="hidden lg:block w-32 shrink-0 pr-3"></div>
                 
                 <div className="flex gap-1 lg:gap-1.5 ml-2">
                   {days.map((_, idx) => (
@@ -118,15 +153,13 @@ export default function MonthHeatmap({
               <div className="space-y-1.5">
                 {HABITS.map(habit => (
                   <div key={habit.id} className="flex items-center group/row">
-                    {/* Habit Label Column (Desktop only | Mobile is handled by overlay above) */}
+                    {/* Label — desktop only. Mobile label is rendered in the overlay above. */}
                     <div className="hidden lg:flex w-32 shrink-0 items-center justify-end pr-3 py-1.5 transition-colors">
                       <span className="text-[11px] font-black text-slate-600 whitespace-nowrap uppercase tracking-tight group-hover/row:text-indigo-600 transition-colors">
                         {habit.label}
                       </span>
                     </div>
-
-                    {/* Mobile Label Spacer (Matches overlay width) */}
-                    <div className="lg:hidden w-32 shrink-0 h-[21px]"></div>
+                    {/* No mobile spacer — ml-32 on the container already provides the 128px offset. */}
 
                     {/* Data Cells */}
                     <div className="flex gap-1 lg:gap-1.5 ml-2">
