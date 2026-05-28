@@ -16,9 +16,13 @@ export const useProgressTracker = (user, isLocalMode) => {
       }
     } else if (user) {
       const docRef = doc(db, 'users', user.uid, 'tracker_data', 'progress_v2');
-      const unsubscribe = onSnapshot(docRef, (docSnap) => {
+      const unsubscribe = onSnapshot(docRef, { includeMetadataChanges: true }, (docSnap) => {
         if (docSnap.exists()) {
-          setCompletedItems(docSnap.data().completedItems || {});
+          const data = docSnap.data();
+          // Only update if we aren't currently writing to the cloud to avoid race conditions
+          if (!docSnap.metadata.hasPendingWrites) {
+            setCompletedItems(data.completedItems || {});
+          }
         }
       }, (error) => console.error("Cloud sync error:", error));
       return () => unsubscribe();
@@ -146,7 +150,7 @@ export const useProgressTracker = (user, isLocalMode) => {
     };
   }, [completedItems, allCombinedWeeks]);
 
-  const saveCompletedItems = async (newCompleted) => {
+  const saveCompletedItems = useCallback(async (newCompleted) => {
     setCompletedItems(newCompleted);
 
     if (isLocalMode) {
@@ -157,7 +161,7 @@ export const useProgressTracker = (user, isLocalMode) => {
         await setDoc(docRef, { completedItems: newCompleted }, { merge: true });
       } catch (error) { console.error("Cloud save error:", error); }
     }
-  };
+  }, [isLocalMode, user]);
 
   // Migration Effect: Convert legacy IDs to stable IDs
   useEffect(() => {
@@ -211,7 +215,7 @@ export const useProgressTracker = (user, isLocalMode) => {
       console.log("Migrated legacy tracker IDs to stable semantic IDs");
       saveCompletedItems(newCompleted);
     }
-  }, [allCombinedWeeks, completedItems]);
+  }, [allCombinedWeeks, completedItems, saveCompletedItems]);
 
   const toggleHabit = async (weekNumber, dayName, habitName) => {
     const id = generateHabitId(weekNumber, dayName, habitName);
