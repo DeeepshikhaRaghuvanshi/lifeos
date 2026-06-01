@@ -31,10 +31,16 @@ if (isConfigured) {
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   
-  // Modern, more robust offline persistence for PWAs
+  // Detect iOS Safari or standalone PWA to avoid Web Locks locking bugs in WebKit
+  const isSafariOrIOS = 
+    typeof navigator !== 'undefined' && (
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (/^((?!chrome|android).)*safari/i.test(navigator.userAgent))
+    );
+
   db = initializeFirestore(app, {
     localCache: persistentLocalCache({
-      tabManager: persistentMultipleTabManager()
+      tabManager: isSafariOrIOS ? undefined : persistentMultipleTabManager()
     })
   });
 
