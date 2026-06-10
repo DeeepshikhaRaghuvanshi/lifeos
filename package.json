@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "netlify dev",
+    "dev": "echo '\\n  LifeOS dev server\\n  Open: http://localhost:8888\\n  (ignore the :5173 line below — that is Vite internal, no functions there)\\n' && netlify dev",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
