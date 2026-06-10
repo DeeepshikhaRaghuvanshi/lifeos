@@ -1,7 +1,7 @@
 // Netlify serverless function — Node 18+ (native fetch available)
 // POST /api/summarize { url } → { title, summary, thumbnail, category, domain }
 
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent';
 
 function detectCategory(url) {
   try {
