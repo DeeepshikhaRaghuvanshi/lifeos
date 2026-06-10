@@ -9,31 +9,42 @@ function domainOf(url) {
   }
 }
 
-// Extract all unique resources from sweData, grouped by domain bucket
+// Extract all unique SWE resources, each carrying every day that references it.
+// Shape: { title, url, days: [{weekNumber, day, task}] }
 export function getSweResources() {
-  const seen = new Set();
-  const leetcode = [];
-  const youtube = [];
-  const tools = [];
+  const resourceMap = new Map(); // url → enriched resource
 
   for (const phase of sweData) {
     for (const week of (phase.weeks || [])) {
       for (const day of (week.days || [])) {
         for (const res of (day.resources || [])) {
-          if (!res.url || seen.has(res.url)) continue;
-          seen.add(res.url);
+          if (!res.url) continue;
 
-          const domain = domainOf(res.url);
-          if (domain === 'leetcode.com') {
-            leetcode.push(res);
-          } else if (domain === 'youtube.com' || domain === 'youtu.be') {
-            youtube.push(res);
-          } else {
-            tools.push(res);
+          if (!resourceMap.has(res.url)) {
+            resourceMap.set(res.url, { title: res.title, url: res.url, days: [] });
+          }
+
+          const entry = resourceMap.get(res.url);
+          const alreadyLinked = entry.days.some(
+            d => d.weekNumber === week.weekNumber && d.day === day.day
+          );
+          if (!alreadyLinked) {
+            entry.days.push({ weekNumber: week.weekNumber, day: day.day, task: day.task });
           }
         }
       }
     }
+  }
+
+  const leetcode = [];
+  const youtube = [];
+  const tools = [];
+
+  for (const resource of resourceMap.values()) {
+    const domain = domainOf(resource.url);
+    if (domain === 'leetcode.com') leetcode.push(resource);
+    else if (domain === 'youtube.com' || domain === 'youtu.be') youtube.push(resource);
+    else tools.push(resource);
   }
 
   const buckets = [];
@@ -43,10 +54,10 @@ export function getSweResources() {
   return buckets;
 }
 
-// GTME resources come straight from resourceData — already categorised
+// GTME resources from resourceData — no day card associations available
 export function getGtmeResources() {
   return resourceData.map(section => ({
     label: section.category,
-    links: section.links
+    links: section.links.map(link => ({ title: link.title, url: link.url, days: [] }))
   }));
 }
