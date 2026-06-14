@@ -114,15 +114,21 @@ export const handler = async (event) => {
     if (!url) throw new Error('url is required');
     const parsed = new URL(url);
     if (parsed.protocol !== 'https:') throw new Error('Only HTTPS URLs are supported');
-    // Block SSRF: reject loopback, link-local, and private addresses
+    // Block SSRF: reject loopback, link-local, and all RFC-1918/special private ranges
     const host = parsed.hostname.toLowerCase();
+    const first2 = host.split('.').slice(0, 2).map(Number);
     const isPrivate =
       host === 'localhost' ||
+      host === '0.0.0.0' ||
       host.startsWith('127.') ||
       host.startsWith('10.') ||
       host.startsWith('192.168.') ||
       host.startsWith('169.254.') ||
+      (first2[0] === 172 && first2[1] >= 16 && first2[1] <= 31) ||
       host === '::1' ||
+      host.startsWith('fc') ||
+      host.startsWith('fd') ||
+      host.startsWith('fe80') ||
       host.endsWith('.local');
     if (isPrivate) throw new Error('URL not allowed');
   } catch (err) {

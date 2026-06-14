@@ -45,11 +45,6 @@ if (isConfigured) {
   });
 
   googleProvider = new GoogleAuthProvider();
-
-  // Expose project ID to window for easy browser console diagnostics
-  if (typeof window !== 'undefined') {
-    window.__FIREBASE_PROJECT_ID__ = firebaseConfig.projectId;
-  }
 }
 
 export { app, auth, db, googleProvider, isConfigured, isLocalhost };
